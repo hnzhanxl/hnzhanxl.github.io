@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 300px;
+      margin: 200px auto;
+      background-color: #ccc;
+    }
+    ul{
+      list-style-type:none;
+    }
+    li{
+      float: left;
+      margin: 15px 15px;
+      width: 24px;
+      height: 24px;
+      background-color: pink;
+      background: url('./images/tao.png');
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <ul>
+      <li>
+      </li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <script>
+    var lis=document.querySelectorAll('.box li')
+    console.log(lis);
+    for (let index = 0; index < lis.length; index++) {
+      lis[index].style.backgroundPosition='0 -'+index*44+'px';
+      
+    }
+  </script>
+</body>
+</html>
